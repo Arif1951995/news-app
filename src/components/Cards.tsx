@@ -30,6 +30,8 @@ function Cards() {
         }),
   });
 
+
+if(error) return <div className="text-center text-red-600">{error?.message || "Something went wrong kindly refresh the page"}</div>
   return (
     <div className="flex flex-col">
       <LangToggle lang={lang} setLang={setLang} />
